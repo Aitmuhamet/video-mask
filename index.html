@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3 Свойство mask-image — schoolsw3.com</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <svg
+      width="850"
+      height="3800"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      class="mobile-size"
+    >
+      <!-- Чёрный фон -->
+      <rect width="100%" height="100%" fill="black" />
+
+      <!-- Маска -->
+      <mask id="svgmask4">
+        <!-- Прозрачные области -->
+        <rect x="520" y="60" width="245" height="60" fill="#fff" />
+        <rect x="110" y="170" width="385" height="60" fill="#fff" />
+        <rect x="15" y="300" width="150" height="60" fill="#fff" />
+        <rect x="200" y="580" width="120" height="60" fill="#fff" />
+        <rect x="570" y="725" width="230" height="60" fill="#fff" />
+      </mask>
+
+      <!-- Видео -->
+      <foreignObject
+        x="0"
+        y="0"
+        width="2100"
+        height="1200"
+        mask="url(#svgmask4)"
+      >
+        <video autoplay loop muted width="100%" height="100%">
+          <source src="video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </foreignObject>
+
+      <!-- Текст -->
+      <text x="10" y="120" font-size="100" fill="#fff" font-family="Arial">
+        We're here
+      </text>
+      <text x="10" y="230" font-size="100" fill="#fff" font-family="Arial">
+        to
+      </text>
+      <text x="520" y="230" font-size="100" fill="#fff" font-family="Arial">
+        make
+      </text>
+      <text x="190" y="360" font-size="100" fill="#fff" font-family="Arial">
+        healthy living
+      </text>
+      <text
+        x="395"
+        y="500"
+        text-anchor="middle"
+        font-size="100"
+        fill="#fff"
+        font-family="Arial"
+      >
+        effortless, so you
+      </text>
+      <text
+        x="100"
+        y="640"
+        text-anchor="middle"
+        font-size="100"
+        fill="#fff"
+        font-family="Arial"
+      >
+        can
+      </text>
+      <text
+        x="570"
+        y="640"
+        text-anchor="middle"
+        font-size="100"
+        fill="#fff"
+        font-family="Arial"
+      >
+        live longer
+      </text>
+      <text
+        x="285"
+        y="780"
+        text-anchor="middle"
+        font-size="100"
+        fill="#fff"
+        font-family="Arial"
+      >
+        and happier
+      </text>
+    </svg>
+
+    <svg
+      width="1800"
+      height="3800"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      class="tablet-size"
+    >
+      <!-- Чёрный фон -->
+      <rect width="100%" height="100%" fill="black" />
+
+      <!-- Маска -->
+      <mask id="svgmask3">
+        <!-- Прозрачные области -->
+        <rect x="700" y="70" width="560" height="90" fill="#fff" />
+        <rect x="470" y="220" width="350" height="90" fill="#fff" />
+        <rect x="700" y="380" width="400" height="90" fill="#fff" />
+        <rect x="780" y="550" width="970" height="90" fill="#fff" />
+      </mask>
+
+      <!-- Видео -->
+      <foreignObject
+        x="0"
+        y="0"
+        width="2200"
+        height="1250"
+        mask="url(#svgmask3)"
+      >
+        <video autoplay loop muted width="100%" height="100%">
+          <source src="video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </foreignObject>
+
+      <!-- Текст -->
+      <text x="10" y="150" font-size="135" fill="#fff" font-family="Arial">
+        We're here
+      </text>
+      <text x="1300" y="150" font-size="135" fill="#fff" font-family="Arial">
+        to make
+      </text>
+      <text x="10" y="300" font-size="135" fill="#fff" font-family="Arial">
+        healthy
+      </text>
+      <text
+        x="1310"
+        y="300"
+        text-anchor="middle"
+        font-size="135"
+        fill="#fff"
+        font-family="Arial"
+      >
+        living effortless,
+      </text>
+      <text
+        x="340"
+        y="460"
+        text-anchor="middle"
+        font-size="135"
+        fill="#fff"
+        font-family="Arial"
+      >
+        so you can
+      </text>
+      <text
+        x="1450"
+        y="460"
+        text-anchor="middle"
+        font-size="135"
+        fill="#fff"
+        font-family="Arial"
+      >
+        live longer
+      </text>
+      <text
+        x="370"
+        y="630"
+        text-anchor="middle"
+        font-size="135"
+        fill="#fff"
+        font-family="Arial"
+      >
+        and happier
+      </text>
+    </svg>
+  </body>
+</html>
